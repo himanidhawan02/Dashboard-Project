@@ -1,0 +1,455 @@
+body {
+    text-align: center;
+    background-color:rgb(249, 246, 243);
+    font-family: "Sedan SC", serif;
+}
+
+@font-face {
+    font-family: ShortBaby;
+    src: url(ShortBaby-Mg2w.ttf);
+}
+
+article > h2 {
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+article > h2:hover {
+    font-size: 2em;
+    text-decoration-color: gold;
+    transition: 0.8s;
+}
+
+/* main starts */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+/* aside fixed section begins */
+
+aside {
+    position: fixed;
+    top: 2em;
+    left: 1.2em;
+}
+
+aside > div {
+    background-color: black;
+    max-width: 15vw;
+    height: 90vh;
+    color: white;
+    border-radius: 2em;
+    box-sizing: border-box;
+    padding: 1.2em;
+}
+
+/* aside-user-profile starts */
+
+#user-profile > img {
+    border-radius: 50%;
+    margin: 1em;
+    width: 60%;
+    height: 75%;
+}
+
+#user-profile > p {
+    font-size: 1.5em;
+    margin: 0;
+    font-weight: bolder;
+}
+
+/* aside-user-profile ends */
+
+
+/* aside-menu starts */
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin-top: 3em;
+    flex-grow: 1;
+}
+
+#profile #menu a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: left;
+    margin: 0.3em;
+    flex-shrink: 1;
+}
+
+#profile #menu p {
+    display: inline;
+    margin-left: 1em;
+    font-weight: 400;
+    font-size: medium;
+    flex-shrink: 1;
+}
+
+#profile #menu a:hover {
+    color: gold;
+}
+
+#profile #menu a > p:hover {
+    color: rgb(201, 201, 201);
+}
+
+/* aside-menu ends */
+/* aside fixed section ends */
+
+
+/* right section starts */
+
+#right-section {
+    position: relative;
+    left: 19vw;
+    width: 75vw;
+    text-align: justify;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* header starts */
+#right-section header {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 1em;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+#right-section header input {
+    padding: 0.5em;
+    border: 1px solid rgba(240, 248, 255, 0.6);
+    height: 1.2em;
+    width: 15em;
+    border-radius: 20px;
+    background-color: white;
+}
+
+#right-section header input:focus {
+    outline: none;
+    border: 2px solid lightgreen;
+}
+
+#right-section header input::placeholder {
+    color: #cfcdcd;
+    letter-spacing: 0.5px;
+}
+/* header ends */
+
+
+/* dashboard starts */
+
+#dashboard {
+    margin-left: 2em;
+}
+
+#dashboard .outer-div {
+    /* border: 2px solid black; */
+    width: 95%;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 1em;
+    border-radius: 30px;
+}
+
+#dashboard img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    height: auto;
+}
+
+#dashboard .inner-div-1 {
+    text-align: left;
+}
+
+/* dashboard ends */
+
+
+/* data section begins */
+
+.data-div {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    align-content: center;
+}
+
+.data-div .card {
+    font-family: ShortBaby;
+    width: 12em;
+    border-radius: 15px;
+    padding: 1em;
+    box-sizing: border-box;
+    font-size: 1.1em;
+}
+
+.data-div #card-1 {
+    background-color: rgb(223, 249, 223);
+}
+
+.data-div #card-2 {
+    background-color: rgb(249, 249, 223);
+}
+
+.data-div #card-3 {
+    background-color: rgb(246, 223, 249);
+}
+
+.data-div #card-4 {
+    background-color: rgb(219, 231, 251);
+}
+
+.data-div .card i {
+    display: block;
+    text-align: right;
+}
+
+.data-div .card:hover {
+    background: linear-gradient(to right, rgb(195, 195, 250), rgb(249, 182, 241), rgb(195, 195, 250));
+}
+
+.data-div .card p {
+    margin: 0;
+}
+
+/* data section ends */
+
+
+/* user starts */
+
+#users {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#user-stats {
+    border-collapse: collapse;
+    border-radius: 20px;
+    width: 90%;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+#user-stats tbody tr:nth-child(even) {
+    background-color: rgb(243, 240, 240);
+}
+
+#user-stats tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+#user-stats thead tr {
+    background-color: rgba(97, 68, 68, 0.572);
+}
+
+#user-stats tr th, td {
+    padding: 1em 100px;
+}
+
+#user-stats tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 20px; 
+}
+
+#user-stats tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 20px; 
+}
+
+#user-stats tbody tr:hover {
+    background-color: #d6d4d4;
+}
+
+/* user ends */
+
+
+/* schedule starts */
+
+#schedule {
+    background-color: white;
+    padding: 1.5em;
+    border-radius: 30px;
+    width: 80%;
+    height: 25em;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+#schedule #heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    font-weight: 900;
+}
+
+#schedule #schedule-list div {
+    padding-left: 1em;
+    margin-bottom: 1em;
+}
+
+#schedule #schedule-list div p, h2 {
+    margin: 0;
+    font-weight: 900;
+}
+
+#schedule #schedule-list div p {
+    color: rgb(184, 183, 183);
+}
+
+#schedule #schedule-list div h2 {
+    font-size: 1.3em;
+}
+
+#schedule #schedule-list div:nth-child(odd) {
+    border-left: 3px solid lightgreen;
+}
+
+#schedule #schedule-list div:nth-child(even) {
+    border-left: 3px solid blue;
+}
+
+#schedule #heading h2 {
+    font-size: 1.7em;
+}
+
+#schedule #heading p {
+    color: #636363;
+    font-size: 0.9em;
+}
+
+#schedule #heading p:hover {
+    color: lightgreen;
+}
+
+/* schedule ends */
+
+
+/* contact starts */
+
+#contact {
+    width: 100%;
+}
+
+#details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    width: 100%;
+    height: 25em;
+}
+
+#details iframe {
+    border: none;
+    border-radius: 2em;
+    width: 40%;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+#details form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 2em;
+    padding: 1.5em;
+    width: 40%;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+#details form > h2 {
+    text-decoration: underline;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+#details form > input, textarea {
+    padding: 0.8em;
+    margin-bottom: 1em;
+    width: 90%;
+    border: 1px solid rgb(192, 191, 191);
+    border-radius: 8px;
+}
+
+#details form > textarea {
+    height: 35%;
+}
+
+#details form ::placeholder {
+    color: rgb(150, 149, 149);
+}
+
+#details form button {
+    padding: 0.6em;
+    width: 95%;
+    border-radius: 8px;
+    border: none;
+    background-color: lightgreen;
+    color: lightyellow;
+    cursor: pointer;
+}
+
+/* contact ends */
+
+
+/* footer starts */
+
+footer {
+    width: 100%;
+    height: 8em;
+    text-align: center;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    padding: 1em;
+    vertical-align: middle;
+}
+
+footer i {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    margin-top: 0.8em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+footer i:hover {
+    color: lightgrey;
+    cursor: pointer;
+}
+
+/* footer ends */
+/* right section ends */
+/* main ends */

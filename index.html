@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/3e5b905e55.js" crossorigin="anonymous"></script>
+
+    <!-- font- sedan sc -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
+
+    <!-- title -->
+    <title>Dashboard Project</title>
+</head>
+<body>
+    <!-- main section -->
+    <main>
+        <!-- fixed aside section -->
+        <aside id="left-section">
+            <!-- left section -->
+            <div id="profile">
+                <!-- user profile -->
+                <div id="user-profile">
+                    <img 
+                        src="man.jpg" 
+                        title="John Doe" 
+                        alt="User-Image" 
+                    />
+                    <p>John Doe</p>
+                </div>
+
+                <!-- menu -->
+                <div id="menu">
+                    <a href="#dashboard">
+                        <i class="fa-solid fa-list-ul"></i>
+                        <p>Dashboard</p>
+                    </a>
+                    <a href="#data">
+                        <i class="fa-solid fa-tags"></i>
+                        <p>Data</p>
+                    </a>
+                    <a href="#users">
+                        <i class="fa-solid fa-user"></i>
+                        <p>Users</p>
+                    </a>
+                    <a href="#schedule">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <p>Schedule</p>
+                    </a>
+                    <a href="#contact">
+                        <i class="fa-solid fa-gear"></i>
+                        <p>Contact</p>
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- right section -->
+        <section id="right-section">
+            <!-- header -->
+            <header>
+                <h1>DashBoard</h1>
+                
+                <!-- search bar -->
+                <input 
+                    type="text" 
+                    placeholder="search..." 
+                    name="searching" 
+                    id="search-item" 
+                />
+            </header>
+
+            <!-- dashboard -->
+            <article id="dashboard">
+                <div class="outer-div">
+                    <div class="inner-div-1">
+                        <h2>Activities</h2>
+                        <p>May-June 2024</p>
+                    </div>
+                    <div class="inner-div-2">
+                        <img 
+                            src="BarGraph.png" 
+                            title="Dashboard"
+                            alt="Dashboard Image" 
+                        />
+                    </div>
+                </div>
+            </article>
+
+            <!-- data -->
+            <article id="data">
+                <h2>Dashboard Data</h2>
+
+                <!-- cards -->
+                <div class="data-div">
+                    <div class="card" id="card-1">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <p>Total Revenue</p>
+                        <p>$456,553,563</p>
+                    </div>
+                    <div class="card" id="card-2">
+                        <i class="fa-solid fa-tag"></i>
+                        <p>Total Transactions</p>
+                        <p>1,450</p>
+                    </div>
+                    <div class="card" id="card-3">
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <p>Total Likes</p>
+                        <p>1,234</p>
+                    </div>
+                    <div class="card" id="card-4">
+                        <i class="fa-solid fa-user"></i>
+                        <p>Total User</p>
+                        <p>856</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- users -->
+            <article id="users">
+                <h2>User Interactions</h2>
+
+                <!-- table -->
+                <table id="user-stats">
+                    <thead>
+                        <tr>
+                            <th>Month</th>
+                            <th>Number of Users</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>January</td>
+                            <td>1000</td>
+                        </tr>
+                        <tr>
+                            <td>February</td>
+                            <td>1200</td>
+                        </tr>
+                        <tr>
+                            <td>March</td>
+                            <td>1500</td>
+                        </tr>
+                        <tr>
+                            <td>April</td>
+                            <td>1250</td>
+                        </tr>
+                        <tr>
+                            <td>May</td>
+                            <td>1600</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <!-- schedule -->
+            <article id="schedule">
+                <div id="heading">
+                    <h2>Today's Schedule</h2>
+                    <p>See All</p>
+                </div>
+
+                <div id="schedule-list">
+                    <div class="meeting" id="meet-1">
+                        <h2>Meetings from suppliers from Kutta Bali</h2>
+                        <p>14:00-15:00</p>
+                        <p>At Sunset Road Kutta Bali</p>
+                    </div>
+
+                    <div class="meeting" id="meet-2">
+                        <h2>Meetings from suppliers from Suresh</h2>
+                        <p>15:00-16:00</p>
+                        <p>At Sunset Road Bali</p>
+                    </div>
+
+                    <div class="meeting" id="meet-3">
+                        <h2>Meetings from suppliers from Ajay</h2>
+                        <p>12:00-1:00</p>
+                        <p>At Sunset Road</p>
+                    </div>
+
+                    <div class="meeting" id="meet-4">
+                        <h2>Meetings from suppliers from Encoprice</h2>
+                        <p>2:00-3:00</p>
+                        <p>At Morning on Sohna Road</p>
+                    </div>
+
+                    <div class="meeting" id="meet-5">
+                        <h2>Meetings from suppliers from JK Ltd.</h2>
+                        <p>10:00-11:00</p>
+                        <p>At Morning Tent House</p>
+                    </div>
+
+                    <div class="meeting" id="meet-6">
+                        <h2>Meetings from suppliers from Manager</h2>
+                        <p>14:00-15:00</p>
+                        <p>At Imperfectio Bar Sohna Road</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- contact -->
+            <article id="contact">
+                <h2>Contact Details</h2>
+
+                <div id="details">
+                    <!-- map -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224346.32835516133!2d77.20898509999999!3d28.5273522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1742885474570!5m2!1sen!2sin" 
+                        allowfullscreen
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+
+                    <!-- feedback form -->
+                    <form id="feedback-form" action="#" method="post">
+                        <h2>Feedback</h2>
+                        <input type="text" placeholder="Your Name" id="name" name="name" required />
+                        <input type="email" placeholder="Your Email" id="email" name="email" required />
+                        <textarea placeholder="Your Feedback" id="feedback" name="feedback"></textarea>
+                        <button type="submit">Submit Feedback</button>
+                    </form>
+                </div>
+            </article>
+
+            <!-- footer -->
+            <footer>
+                <div class="social-media">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <p>&copy; 2025 Your Company Name. All Rights Reserved.</p>
+            </footer>
+        </section>
+    </main>
+</body>
+</html>
